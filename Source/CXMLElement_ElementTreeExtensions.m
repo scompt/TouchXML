@@ -36,7 +36,7 @@
 
 - (CXMLElement *)subelement:(NSString *)inName;
 {
-CXMLElement *theSubelement = [CXMLNode elementWithName:inName];
+CXMLElement *theSubelement = [CXMLNode elementWithName2:inName];
 [self addChild:theSubelement];
 return(theSubelement);
 }

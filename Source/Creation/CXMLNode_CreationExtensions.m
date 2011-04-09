@@ -55,7 +55,7 @@ CXMLDocument *theDocument = [[[CXMLDocument alloc] initWithLibXMLNode:(xmlNodePt
 return(theDocument);
 }
 
-+ (id)elementWithName:(NSString *)name
++ (id)elementWithName2:(NSString *)name
 {
 xmlNodePtr theElementNode = xmlNewNode(NULL, (const xmlChar *)[name UTF8String]);
 CXMLElement *theElement = [[[CXMLElement alloc] initWithLibXMLNode:(xmlNodePtr)theElementNode freeOnDealloc:NO] autorelease];
